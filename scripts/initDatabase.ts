@@ -3,7 +3,6 @@ import { sapHanaService } from '../backend/sapHana';
 async function initializeDatabase() {
   try {
     console.log('🔄 Initializing SAP HANA Cloud Database...');
-    
     // Connect to SAP HANA Cloud
     await sapHanaService.connect();
     console.log('✅ Connected to SAP HANA Cloud');
