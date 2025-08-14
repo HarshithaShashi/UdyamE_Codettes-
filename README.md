@@ -2,9 +2,6 @@
 
 A marketplace application connecting skilled workers with customers for various services.
 
-## 🚀 Live Demo
-
-[View Live App](https://your-vercel-url.vercel.app)
 
 ## ✨ Features
 
@@ -58,15 +55,5 @@ npm run build:web:static
 npm run deploy:vercel
 ```
 
-## 📱 Screenshots
-
-*Add screenshots of your app here*
-
-## 🔗 Links
-
-- [Live Demo](https://your-vercel-url.vercel.app)
-- [Portfolio Page](https://your-vercel-url.vercel.app/portfolio)
-
----
 
 Built with ❤️ using React Native & Expo
