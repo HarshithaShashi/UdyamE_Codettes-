@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Udyami-app",
+    "name": "Udyami - Empowering India's Workers",
     "slug": "Udyami-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,8 +15,12 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "single",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "title": "Udyami - Empowering India's Workers",
+      "description": "A marketplace connecting skilled workers with customers for various services like painting, carpentry, plumbing, and more.",
+      "themeColor": "#b73c2f",
+      "backgroundColor": "#fff2e1"
     },
     "plugins": [
       "expo-router",
@@ -39,6 +43,12 @@
       "eas": {
         "projectId": "2164864a-dc02-429e-a7b0-9725b7e98a1e"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/2164864a-dc02-429e-a7b0-9725b7e98a1e"
     }
   }
 }

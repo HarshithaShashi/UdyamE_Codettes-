@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useAuth } from '@/contexts/AuthContext';
 import { useUser } from '@/contexts/UserContext';
@@ -41,6 +41,14 @@ export default function SplashScreen() {
           {t('common.tagline', "Empowering India's Workers")}
         </Text>
       </View>
+      
+      {/* Portfolio link for recruiters */}
+      <TouchableOpacity 
+        style={styles.portfolioButton}
+        onPress={() => router.push('/portfolio')}
+      >
+        <Text style={styles.portfolioButtonText}>View Project Portfolio</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -66,5 +74,22 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     textAlign: 'center',
     paddingHorizontal: 20,
+  },
+  portfolioButton: {
+    backgroundColor: '#b73c2f',
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    borderRadius: 12,
+    marginTop: 40,
+    shadowColor: '#b73c2f',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  portfolioButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
   },
 });
