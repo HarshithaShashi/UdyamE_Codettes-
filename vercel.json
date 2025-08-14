@@ -1,11 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!api|_next/static|_next/image|favicon.ico).*)",
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "npx expo export --platform web",
+  "buildCommand": "npm run build:vercel",
   "outputDirectory": "web-build",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "framework": "expo"
 }
