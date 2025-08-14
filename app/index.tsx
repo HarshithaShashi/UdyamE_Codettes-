@@ -21,9 +21,9 @@ export default function SplashScreen() {
       } else if (!isAuthenticated) {
         router.replace('/role-selection');
       } else if (userRole === 'buyer') {
-        router.replace('/(buyer)');
+        router.replace('/(buyer)/tabs');
       } else if (userRole === 'seller') {
-        router.replace('/(seller)');
+        router.replace('/(seller)/tabs');
       } else {
         router.replace('/role-selection');
       }
