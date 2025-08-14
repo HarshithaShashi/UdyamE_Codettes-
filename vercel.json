@@ -8,5 +8,5 @@
   "buildCommand": "npm run build:vercel",
   "outputDirectory": "web-build",
   "installCommand": "npm install",
-  "framework": "expo"
+  "framework": "create-react-app"
 }
